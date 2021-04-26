@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+.landing {
+  height: 100vh;
+  background-image: url(https://picsum.photos/1920);
+  background-size: cover;
+  padding: 7% 31%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+.header1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  font-size: 50px;
+  color: transparent;
+  animation: effect 0.8s linear infinite;
+  transti;
+}
+
+@keyframes effect {
+  0% {
+      background: linear-gradient(
+              blue, #00d9ff);
+      -webkit-background-clip: text;
+  }
+
+  20% {
+      background: linear-gradient(
+              #03fa2c, #8212df);
+      -webkit-background-clip: text;
+  }
+  40% {
+    background: linear-gradient(
+            #abf303, #cff10b);
+    -webkit-background-clip: text;
+}
+
+60% {
+    background: linear-gradient(
+            #f7e603, #ff8800);
+    -webkit-background-clip: text;
+}
+80% {
+  background: linear-gradient(
+          #fa5d02, #ff1e00);
+  -webkit-background-clip: text;
+}
+
+100% {
+  background: linear-gradient(
+          #fc02da, #c300ff);
+  -webkit-background-clip: text;
+}
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+}
+
+.timeline {
+  background-image: url(../images/gaston-abascal-8F-6pXyQyLU-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.timeline-container {
+  background: rgba( 63, 105, 228, 1.00 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20.0px );
+  -webkit-backdrop-filter: blur( 20.0px );
+  border-radius: 30px;
+  border: 10px solid rgba( 255, 255, 255, 0.18 );
+  padding: 10px 40px;
+  position: relative;
+  background-color: white;
+  width: 50%;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+
+.content {
+  font-family: sans-serif;
+  font-style: none;
+  font-weight: 100;
+  margin: 10%;
+  background: white;
+  border-radius: 10px;
+}
+
+.timeline-container {
+  padding: 100px 50px;
+  position: relative;
+  background: inherit;
+  width: 40%;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+      }
+      .right {
+        left: 0%;
+        }    
